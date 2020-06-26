@@ -7,8 +7,7 @@ var bodyParser=require("body-parser");
 app.use(methodOverride('_method'))
 
 //mongoose.connect("mongodb://localhost/dofos",{useNewUrlParser: true,useUnifiedTopology: true });
-mongoose.connect("mongodb+srv://abhinav:KonmIeixRZ0cyhFI@cluster0-yebob.mongodb.net/<dbname>?retryWrites=true&w=majority
-",{useNewUrlParser: true,useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://abhinav:KonmIeixRZ0cyhFI@cluster0-yebob.mongodb.net/<dbname>?retryWrites=true&w=majority",{useNewUrlParser: true,useUnifiedTopology: true })
 
 
 
