@@ -10,18 +10,7 @@ app.use(methodOverride('_method'))
 //mongoose.connect("mongodb+srv://abhinav:KonmIeixRZ0cyhFI@cluster0-yebob.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser: true,useUnifiedTopology: true })
 //mongoose.connect("mongodb+srv://abhinav:bJoIkOywrOXRdUpr@cluster0-yebob.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser: true,useUnifiedTopology: true })
 
-//mongoose.connect("mongodb+srv://abhinav:bJoIkOywrOXRdUpr@cluster0-yebob.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true})
-
-
-const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://abhinav:bJoIkOywrOXRdUpr@cluster0-yebob.mongodb.net/test?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true,useUnifiedTopology:true});
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
-
+mongoose.connect("mongodb+srv://abhinav:tByFCoryPd4nZSf1@cluster0-yebob.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true})
 
 
 app.use(express.static(__dirname + '/'));
